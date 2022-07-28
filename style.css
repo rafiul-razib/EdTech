@@ -1,0 +1,25 @@
+.carousel-item{
+    height: auto;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+
+.carousel-item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity:0.6;
+}
+
+.carousel-caption{
+    bottom: 10%;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 5;
+}
