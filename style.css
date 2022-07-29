@@ -1,7 +1,21 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2{
+    font-weight: 600;
+}
+
+p{
+    font-size: 1rem;
+}
 .carousel-item{
     height: auto;
     min-height: 300px;
-    background: no-repeat scroll center scroll;
+    background: no-repeat  center;
     background-size: cover;
 }
 
@@ -43,4 +57,19 @@ footer a{
 .media:hover{
     transform: rotate(360deg);
    
+}
+
+
+@media only screen and (max-width: 688px) {
+    .carousel-item img{
+        min-height: 300px;
+        width: auto;
+    }
+
+    .carousel-item h1{
+        font-size: 25px;
+    }
+    .carousel-item p{
+        font-size: 12px;
+    }
 }
